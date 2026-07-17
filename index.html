@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faizan — Developer</title>
+<meta name="description" content="Faizan — self-taught developer building full products from a phone screen.">
+<link rel="icon" type="image/png" href="assets/images/avatar.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="particle-field" id="particleField"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <img src="assets/images/avatar.png" alt="Faizan" class="nav-avatar">
+      Faizan<span class="dot">.</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="top">
+  <div class="hero-avatar-orb" aria-hidden="true">
+    <img src="assets/images/avatar.png" alt="">
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="pulse-dot"></span> Available for freelance work</p>
+      <h1 class="hero-title">
+        Building real software<br>
+        <span class="highlight">from scratch.</span>
+      </h1>
+      <p class="hero-sub">
+        I'm Faizan — a self-taught developer focused on building clean,
+        responsive, production-ready web products. Currently open for
+        freelance work and collaborations.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Hire me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Live projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Responsive builds</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">24h</span>
+          <span class="stat-label">Response time</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="glass-editor">
+        <div class="editor-topbar">
+          <span class="editor-dot red"></span>
+          <span class="editor-dot yellow"></span>
+          <span class="editor-dot green"></span>
+          <span class="editor-filename">acode — index.js</span>
+        </div>
+        <pre class="editor-body"><code id="typedCode"></code><span class="cursor-blink">|</span></pre>
+      </div>
+      <div class="glass-phone-badge">
+        <span>⚡</span>
+        <span>Currently shipping v1</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow">01 — About</p>
+      <h2 class="section-title">No laptop. No shortcuts.</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a self-taught developer focused on writing clean, maintainable
+          code and shipping products that actually work — responsive UI,
+          solid backend logic, and attention to the small details most
+          people skip.
+          <br><br>
+          Right now I'm working through a structured set of projects —
+          frontend, full stack, AI-integrated, and business dashboards —
+          to build a portfolio that speaks for itself. The plan is simple:
+          build, earn, upgrade, repeat.
+          <br><br>
+          One detail worth mentioning: everything here, including this
+          site, was written and debugged entirely on a phone using Acode.
+          No laptop yet — just discipline and a lot of patience with a
+          touchscreen keyboard.
+        </p>
+        <div class="about-card glass">
+          <h3>Currently</h3>
+          <ul class="about-list">
+            <li><span class="tag-dot"></span> 4 projects shipped &amp; live</li>
+            <li><span class="tag-dot"></span> Open to freelance work</li>
+            <li><span class="tag-dot"></span> Learning in public, daily commits</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow">02 — Skills</p>
+      <h2 class="section-title">What I build with</h2>
+      <div class="skills-grid">
+        <div class="skill-group glass">
+          <h4>Frontend</h4>
+          <div class="chip-row">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-group glass">
+          <h4>Backend</h4>
+          <div class="chip-row">
+            <span class="chip">Node.js</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">Authentication</span>
+            <span class="chip">Databases</span>
+          </div>
+        </div>
+        <div class="skill-group glass">
+          <h4>AI Integration</h4>
+          <div class="chip-row">
+            <span class="chip">AI-powered Apps</span>
+            <span class="chip">Prompt Design</span>
+            <span class="chip">Chat Interfaces</span>
+          </div>
+        </div>
+        <div class="skill-group glass">
+          <h4>Tools</h4>
+          <div class="chip-row">
+            <span class="chip">Git &amp; GitHub</span>
+            <span class="chip">Acode</span>
+            <span class="chip">Vercel</span>
+            <span class="chip">Netlify</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK / PROJECTS ===== -->
+  <section class="section" id="work">
+    <div class="section-inner">
+      <p class="section-eyebrow">03 — Work</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Each one built, tested, and deployed from mobile.</p>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY ===== -->
+  <section class="section section-alt" id="journey">
+    <div class="section-inner">
+      <p class="section-eyebrow">04 — Journey</p>
+      <h2 class="section-title">Building in public</h2>
+      <div class="timeline">
+        <div class="timeline-item glass">
+          <span class="timeline-date">Done</span>
+          <p>4 frontend projects shipped — portfolio, restaurant site, SaaS landing page, e-commerce store.</p>
+        </div>
+        <div class="timeline-item glass">
+          <span class="timeline-date">Next</span>
+          <p>Full-stack projects — auth systems, dashboards, real databases.</p>
+        </div>
+        <div class="timeline-item glass">
+          <span class="timeline-date">Later</span>
+          <p>Freelance clients, first laptop, then the big one: an AI companion app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section" id="testimonials">
+    <div class="section-inner">
+      <p class="section-eyebrow">05 — Testimonials</p>
+      <h2 class="section-title">What clients say</h2>
+      <p class="section-sub">Coming soon — this section fills up as projects ship.</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card glass placeholder-card">
+          <p class="quote-mark">"</p>
+          <p class="testimonial-text">Your first client quote goes here.</p>
+          <p class="testimonial-author">— Client name, role</p>
+        </div>
+        <div class="testimonial-card glass placeholder-card">
+          <p class="quote-mark">"</p>
+          <p class="testimonial-text">Your second client quote goes here.</p>
+          <p class="testimonial-author">— Client name, role</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner">
+      <div class="contact-card glass">
+        <img src="assets/images/avatar.png" alt="" class="contact-avatar">
+        <p class="section-eyebrow">06 — Contact</p>
+        <h2 class="section-title">Let's build something.</h2>
+        <p class="section-sub">Open to freelance work, collabs, or just a chat about code.</p>
+        <div class="contact-links">
+          <a href="mailto:codewithfaiz.dev@gmail.com" class="btn btn-primary">Email me</a>
+          <a href="resume.pdf" class="btn btn-ghost" download>Download résumé</a>
+        </div>
+        <div class="social-row">
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Fiverr</a>
+          <a href="#" target="_blank" rel="noopener">Upwork</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Faizan — on a phone, one commit at a time.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
